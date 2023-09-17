@@ -93,7 +93,8 @@ a {
     width: 20%;
     height: 100%;
   }
-  &__logo-text {
+  &__logo-text,
+  &__logo-link {
     color: #FFF;
     font-family: $fontInter;
     font-size: 5vh;
@@ -166,8 +167,13 @@ a {
 /* ADAPTIVE */
 @media (max-width: 768px) {
   .header {
+    height: 11vw;
     justify-content: space-between;
     align-items: center;
+    &__logo-text,
+    &__logo-link {
+      font-size: 5vw;
+    }
     .burger {
       display: block;
       margin-left: 3%;
@@ -189,13 +195,32 @@ a {
     &__content-wrapper {
       width: 100%;
     }
+    &__content-title-text {
+      font-size: 5vw;
+      line-height: 10vw;
+      margin-bottom: 0;
+    }
+    &__content-subtitle-text {
+      font-size: 4vw;
+      line-height: 4vw;
+      margin-bottom: 2%;
+    }
+    &__content-text {
+      font-size: 3vw;
+      line-height: 6vw;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    &__logo-text {
+    &__logo-text,
+    &__logo-link {
       font-size: 5vw;
+    }
+    .burger {
+      width: 9vw;
+      height: 4vw;
     }
   }
 }
