@@ -22,20 +22,20 @@ a {
 
 .header {
   background-color: #DCDCDC ;
-  height: 90px;
+  height: 10vh;
   &__logo {
     background-color: #8F816C;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 20%;
     height: 100%;
   }
   &__logo-text {
     color: #FFF;
     font-family: $fontInter;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 5vh;
+    line-height: 5vh;
   }
 }
 
@@ -44,18 +44,18 @@ a {
   display: flex;
   &__sidebar-wrapper {
     background-color: #8F8F8F;
-    width: 300px;
-    max-height: 700px;
+    width: 20%;
+    height: 100%;
   }
   &__content-wrapper {
     background-color: #CECECE;
     display: flex;
-    max-width: 1140px;
+    width: 80%;
     //padding: 50px;
   }
   &__content-inner {
     background-color: #E8E8E8;
-    margin: 50px;
+    margin: 3%;
   }
   &__content-title-text {
     font-size: 40px;
@@ -78,33 +78,23 @@ a {
 }
 
 .sidebar {
-  padding: 0 10px;
+  padding: 0 4%;
   &__inner {
-    max-height: 680px;
-    margin: 10px 0;
+    max-height: 50vh;
+    margin: 4% 0;
     background-color: #ABABAB;
     overflow: scroll;
     -ms-overflow-style: none;
     &::-webkit-scrollbar { width: 0; }
   }
-  &__menu {
-    
-  }
+  &__menu { }
   &__item {
     margin: 10px 0;
   }
   &__link {
     color: #FFF;
     font-family: $fontInter;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
   }
 }
-
-
-
-/* хром, сафари */
-.element::-webkit-scrollbar { width: 0; }
-
-/* ie 10+ */
-.element { -ms-overflow-style: none; }
