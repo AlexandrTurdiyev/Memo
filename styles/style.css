@@ -18,8 +18,61 @@ a {
 }
 
 .header {
+  display: flex;
   background-color: #DCDCDC;
   height: 10vh;
+  /* BURGER */
+  /* BURGER [END] */
+}
+.header .burger {
+  z-index: 2;
+  position: relative;
+  width: 45px;
+  height: 20px;
+  display: none;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header .burger__line {
+  background-color: #8F816C;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+  transition: opacity 0.1s ease-in-out;
+}
+.header .burger::before,
+.header .burger::after {
+  background-color: #8F816C;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: transform 0.1s ease-in-out, top 0.1s ease-in-out, bottom 0.1s ease-in-out;
+}
+.header .burger::before {
+  top: 0;
+}
+.header .burger::after {
+  bottom: 0;
+}
+.header .burger--active .burger__line {
+  opacity: 0;
+}
+.header .burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.header .burger--active::after {
+  bottom: auto;
+  top: 50%;
+  transform: rotate(-45deg);
 }
 .header__logo {
   background-color: #8F816C;
@@ -44,6 +97,28 @@ a {
   background-color: #8F8F8F;
   width: 20%;
   height: 100%;
+}
+.page .sidebar {
+  padding: 0 4%;
+}
+.page .sidebar__inner {
+  max-height: 50vh;
+  margin: 4% 0;
+  background-color: #ABABAB;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+.page .sidebar__inner::-webkit-scrollbar {
+  width: 0;
+}
+.page .sidebar__item {
+  margin: 10px 0;
+}
+.page .sidebar__link {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
 }
 .page__content-wrapper {
   background-color: #CECECE;
@@ -73,27 +148,38 @@ a {
   line-height: 55px;
 }
 
-.sidebar {
-  padding: 0 4%;
+/* ADAPTIVE */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .burger {
+    display: block;
+    margin-left: 3%;
+  }
+  .page__sidebar-wrapper {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+  }
+  .page__content-wrapper {
+    width: 100%;
+  }
 }
-.sidebar__inner {
-  max-height: 50vh;
-  margin: 4% 0;
-  background-color: #ABABAB;
-  overflow: scroll;
-  -ms-overflow-style: none;
+@media (max-width: 480px) {
+  .header__logo-text {
+    font-size: 5vw;
+  }
 }
-.sidebar__inner::-webkit-scrollbar {
-  width: 0;
+/* ADAPTIVE [END] */
+/* FUNCTIONS */
+.element--visible {
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.4s ease-in-out;
 }
-.sidebar__item {
-  margin: 10px 0;
-}
-.sidebar__link {
-  color: #FFF;
-  font-family: "Inter", sans-serif;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
-}
+
+/* FUNCTIONS [END] */
 
 /*# sourceMappingURL=style.css.map */
