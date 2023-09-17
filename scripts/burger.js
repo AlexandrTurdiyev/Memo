@@ -4,5 +4,6 @@ console.log(burger);
 console.log(sidebar);
 
 burger.addEventListener('click', () => {
+    burger.classList.toggle('burger--active');
     sidebar.classList.toggle('element--visible');
 })
