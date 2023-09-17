@@ -3,13 +3,19 @@
   box-shadow: 7px 5px 15px #2e2e2e;
   border: 1px solid #8F8F8F;
   border-radius: 4%;
-  width: 47vw;
-  height: 32vw;
+  width: 60vw;
+  height: 40vw;
+  max-width: 1040px;
+  max-height: 700px;
   display: grid;
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: repeat(4, 22%);
+  grid-template-areas: ". . . . . ."
+                       ". . . . . ."
+                       ". . . . . ."
+                       ". . . . key-23 key-23";
   grid-gap: 0.5vw;
   &__key {
     background-image: linear-gradient(135deg, #2e2e2e, #171717);
@@ -20,7 +26,7 @@
     border-radius: 10%;
     div {
       color: #FFFFFF;
-      font-size: 1vw;
+      font-size: 1.5vw;
       display: flex;
       justify-content: center;
       background-image: linear-gradient(135deg, #333333, #777777);
@@ -29,9 +35,20 @@
       height: 75%;
       width: 75%;
       &:hover {
-        background-image: linear-gradient(135deg, #777777, #333333);
+        background-image: linear-gradient(135deg, #b3b3b3, #4a4a4a);
         cursor: pointer;
       }
+    }
+  }
+  &__key-23 {
+    grid-area: key-23;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7vw;
+    div {
+      height: 75%;
+      width: 85%;
+      border-radius: 0.7vw;
     }
   }
 }
