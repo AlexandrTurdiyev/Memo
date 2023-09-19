@@ -25,7 +25,7 @@
 }
 .macropad__key div {
   color: #FFFFFF;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(135deg, #333333, #777777);
@@ -54,6 +54,9 @@
   .macropad {
     width: 88vw;
     height: 60vw;
+  }
+  .macropad__key div {
+    font-size: 4.5vw;
   }
 }
 
