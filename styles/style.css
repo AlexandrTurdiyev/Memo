@@ -18,9 +18,12 @@ a {
 }
 
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   background-color: #DCDCDC;
   height: 10vh;
+  max-height: 90px;
   /* BURGER */
   /* BURGER [END] */
 }
@@ -85,15 +88,20 @@ a {
 .header__logo-text, .header__logo-link {
   color: #FFF;
   font-family: "Inter", sans-serif;
-  font-size: 5vh;
+  font-size: 3rem;
   line-height: 5vh;
 }
 
 .page {
   background-color: #F3F3F3;
   display: flex;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 .page__sidebar-wrapper {
+  position: sticky;
+  top: 7%;
   background-color: #8F8F8F;
   width: 20%;
   height: 100%;
@@ -117,17 +125,21 @@ a {
 .page .sidebar__link {
   color: #FFF;
   font-family: "Inter", sans-serif;
-  font-size: 1.5vw;
-  line-height: 1.5vw;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 1rem, 2.5vw, 2rem;
 }
 .page__content-wrapper {
-  background-color: #CECECE;
+  background-color: #E8E8E8;
   display: flex;
   width: 80%;
 }
 .page__content-inner {
   background-color: #E8E8E8;
   margin: 3%;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 55px;
 }
 .page__content-title-text {
   font-size: 40px;
@@ -139,13 +151,29 @@ a {
   font-size: 35px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .page__content-text {
   font-size: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 55px;
+}
+.page__content-link {
+  color: #000877;
+}
+.page__content-img {
+  width: 100%;
+}
+
+.page-list__item {
+  margin-left: 3rem;
+}
+
+.download-img {
+  width: 32px;
+  height: 32px;
 }
 
 /* ADAPTIVE */
@@ -175,6 +203,10 @@ a {
   .page__content-wrapper {
     width: 100%;
   }
+  .page__content-inner {
+    font-size: 3vw;
+    line-height: 6vw;
+  }
   .page__content-title-text {
     font-size: 5vw;
     line-height: 10vw;
@@ -197,6 +229,9 @@ a {
   .header .burger {
     width: 9vw;
     height: 4vw;
+  }
+  .page-list__item {
+    margin-left: 2rem;
   }
 }
 /* ADAPTIVE [END] */
