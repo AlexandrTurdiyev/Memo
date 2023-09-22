@@ -173,27 +173,31 @@ a {
 .page__content-img {
   width: 100%;
 }
-.page__radio-controls-inner {
-  display: flex;
-  column-gap: 10%;
+.page__radio-controls {
+  max-width: 100%;
 }
-.page__radio-controls-item {
-  position: relative;
+.page__radio-controls-inner {
+  display: grid;
+  justify-content: space-around;
+  justify-items: stretch;
+  grid-template-columns: repeat(5, 20%);
+  max-width: 70%;
 }
 .page__radio-controls-label {
   background: linear-gradient(342deg, rgb(2, 38, 82) 0%, rgb(71, 139, 255) 100%);
   color: #fff;
-  width: 150%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.4s ease;
-  border-radius: 40%;
+  transform: scale(0.6);
 }
 .page__radio-controls-label:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 27px 22px, rgba(0, 0, 0, 0.12) 0px -6px 15px, rgba(0, 0, 0, 0.12) 0px 2px 3px, rgba(0, 0, 0, 0.17) 0px 6px 7px, rgba(0, 0, 0, 0.09) 0px -2px 3px;
   border-color: #FFF;
-  transform: scale(1.1);
+  transform: scale(0.8);
   transition: all 0.4s ease;
 }
 .page__radio-controls-input {
@@ -205,31 +209,31 @@ a {
 
 .page__radio-controls-inner:has(input[id=layer-default]:checked) .default {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: scale(0.8);
+  transform: scale(1);
   color: yellow;
 }
 
 .page__radio-controls-inner:has(input[id=layer-normal]:checked) .normal {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: scale(0.8);
+  transform: scale(1);
   color: yellow;
 }
 
 .page__radio-controls-inner:has(input[id=layer-1]:checked) .fn {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: scale(0.8);
+  transform: scale(1);
   color: yellow;
 }
 
 .page__radio-controls-inner:has(input[id=layer-2]:checked) .fn2 {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: scale(0.8);
+  transform: scale(1);
   color: yellow;
 }
 
 .page__radio-controls-inner:has(input[id=layer-3]:checked) .fn3 {
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transform: scale(0.8);
+  transform: scale(1);
   color: yellow;
 }
 
