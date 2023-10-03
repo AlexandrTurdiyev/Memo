@@ -1,4 +1,6 @@
 $fontInter: 'Inter', sans-serif;
+$fontSizeContentText: clamp(12px, 3vw, 32px);
+$lineHeightContentText: clamp(16px, 5vw, 48px);
 
 * {
   margin: 0;
@@ -6,7 +8,8 @@ $fontInter: 'Inter', sans-serif;
 }
 
 body {
-  background-color: #000;
+  font-size: $fontSizeContentText;
+  line-height: $lineHeightContentText;
 }
 
 a {
@@ -20,10 +23,8 @@ a {
 }
 
 .header {
-  position: sticky;
   top: 0;
   display: flex;
-  background-color: #DCDCDC ;
   height: 10vh;
   max-height: 90px;
   /* BURGER */
@@ -88,101 +89,74 @@ a {
   }
   /* BURGER [END] */
   &__logo {
-    background-color: #8F816C;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 20%;
     height: 100%;
   }
   &__logo-text,
   &__logo-link {
-    color: #FFF;
     font-family: $fontInter;
-    font-size: clamp(1rem, 3rem, 5rem);
-    line-height: 5vh;
   }
 }
 
 .page {
-  background-color: #F3F3F3;
   display: flex;
-  font-size: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 
   &__sidebar-wrapper {
     position: sticky;
     top: 7%;
-    background-color: #8F8F8F;
     width: 20%;
     height: 100%;
   }
 
   .sidebar {
     padding: 0 4%;
-
     &__inner {
       max-height: 50vh;
       margin: 4% 0;
-      background-color: #ABABAB;
       overflow: scroll;
       -ms-overflow-style: none;
-
       &::-webkit-scrollbar {
         width: 0;
       }
     }
-
-    &__menu {
-    }
-
+    &__menu {}
     &__item {
       margin: 10px 0;
     }
-
-    &__link {
-      color: #FFF;
-      font-family: $fontInter;
-      font-size: clamp(1rem, 2.5vw, 2rem);
-      line-height: (1rem, 2.5vw, 2rem);
-    }
+    &__link {}
   }
 
   &__content-wrapper {
-    background-color: #E8E8E8;
     display: flex;
     width: 80%;
     //padding: 50px;
   }
 
   &__content-inner {
-    background-color: #E8E8E8;
     margin: 3%;
-    font-size: 30px;
+    font-size: $fontSizeContentText;
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    line-height: 55px;
-
   }
 
   &__content-title-text {
-    font-size: 40px;
     font-family: $fontInter;
     font-weight: 700;
     margin-bottom: 25px;
   }
 
   &__content-subtitle-text {
-    font-size: 35px;
     font-family: $fontInter;
     font-weight: 700;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 1rem;
   }
 
   &__content-sub-subtitle-text {
-    font-size: 32px;
     font-family: $fontInter;
     font-weight: 700;
     margin-bottom: 10px;
@@ -190,10 +164,8 @@ a {
   }
 
   &__content-text {
-    font-size: 30px;
     font-family: $fontInter;
     font-weight: 400;
-    line-height: 55px;
   }
 
   &__content-link {
@@ -297,7 +269,6 @@ $scaleActiveRadioButton: 1;
     align-items: center;
     &__logo-text,
     &__logo-link {
-      font-size: 5vw;
     }
     .burger {
       display: block;
@@ -312,32 +283,19 @@ $scaleActiveRadioButton: 1;
       transition: transform 0.4s ease-in-out;
     }
     .sidebar {
-      &__link {
-        font-size: 3.5vw;
-        line-height: 3.5vw;
-      }
+      &__link {}
     }
     &__content-wrapper {
       width: 100%;
     }
-    &__content-inner {
-      font-size: 3vw;
-      line-height: 6vw;
-    }
+    &__content-inner {}
     &__content-title-text {
-      font-size: 5vw;
-      line-height: 10vw;
       margin-bottom: 0;
     }
     &__content-subtitle-text {
-      font-size: 4vw;
-      line-height: 4vw;
       margin-bottom: 2%;
     }
-    &__content-text {
-      font-size: 3vw;
-      line-height: 6vw;
-    }
+    &__content-text { }
   }
 }
 
@@ -345,7 +303,6 @@ $scaleActiveRadioButton: 1;
   .header {
     &__logo-text,
     &__logo-link {
-      font-size: 5vw;
     }
     .burger {
       width: 9vw;

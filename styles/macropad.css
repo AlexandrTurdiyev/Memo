@@ -2,6 +2,7 @@
   margin: 0 auto;
 }
 .macropad-wrapper .macropad {
+  z-index: -1;
   background-color: #343434;
   box-shadow: 7px 5px 15px #2e2e2e;
   border: 1px solid #8F8F8F;
@@ -32,10 +33,11 @@
   border-radius: 10%;
 }
 .macropad-wrapper .macropad__key div {
+  font-size: clamp(12px, 3vw, 100%);
   color: #FFFFFF;
-  font-size: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   background-image: linear-gradient(135deg, #333333, #777777);
   border: 1px solid #6b6b6b;
   border-radius: 10%;
@@ -66,9 +68,6 @@
   .macropad-wrapper .macropad {
     width: 86vw;
     height: 57vw;
-  }
-  .macropad-wrapper .macropad__key div {
-    font-size: 4.5vw;
   }
 }
 

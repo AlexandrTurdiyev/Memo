@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #000;
+  font-size: clamp(12px, 3vw, 32px);
+  line-height: clamp(16px, 5vw, 48px);
 }
 
 a {
@@ -18,10 +19,8 @@ a {
 }
 
 .header {
-  position: sticky;
   top: 0;
   display: flex;
-  background-color: #DCDCDC;
   height: 10vh;
   max-height: 90px;
   /* BURGER */
@@ -78,31 +77,23 @@ a {
   transform: rotate(-45deg);
 }
 .header__logo {
-  background-color: #8F816C;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 20%;
   height: 100%;
 }
 .header__logo-text, .header__logo-link {
-  color: #FFF;
   font-family: "Inter", sans-serif;
-  font-size: 3rem;
-  line-height: 5vh;
 }
 
 .page {
-  background-color: #F3F3F3;
   display: flex;
-  font-size: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 .page__sidebar-wrapper {
   position: sticky;
   top: 7%;
-  background-color: #8F8F8F;
   width: 20%;
   height: 100%;
 }
@@ -112,7 +103,6 @@ a {
 .page .sidebar__inner {
   max-height: 50vh;
   margin: 4% 0;
-  background-color: #ABABAB;
   overflow: scroll;
   -ms-overflow-style: none;
 }
@@ -122,50 +112,36 @@ a {
 .page .sidebar__item {
   margin: 10px 0;
 }
-.page .sidebar__link {
-  color: #FFF;
-  font-family: "Inter", sans-serif;
-  font-size: clamp(1rem, 2.5vw, 2rem);
-  line-height: 1rem, 2.5vw, 2rem;
-}
 .page__content-wrapper {
-  background-color: #E8E8E8;
   display: flex;
   width: 80%;
 }
 .page__content-inner {
-  background-color: #E8E8E8;
   margin: 3%;
-  font-size: 30px;
+  font-size: clamp(12px, 3vw, 32px);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  line-height: 55px;
 }
 .page__content-title-text {
-  font-size: 40px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-bottom: 25px;
 }
 .page__content-subtitle-text {
-  font-size: 35px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 .page__content-sub-subtitle-text {
-  font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 30px;
 }
 .page__content-text {
-  font-size: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  line-height: 55px;
 }
 .page__content-link {
   color: #000877;
@@ -253,9 +229,6 @@ a {
     justify-content: space-between;
     align-items: center;
   }
-  .header__logo-text, .header__logo-link {
-    font-size: 5vw;
-  }
   .header .burger {
     display: block;
     margin-left: 3%;
@@ -266,36 +239,17 @@ a {
     transform: translateX(-100%);
     transition: transform 0.4s ease-in-out;
   }
-  .page .sidebar__link {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-  }
   .page__content-wrapper {
     width: 100%;
   }
-  .page__content-inner {
-    font-size: 3vw;
-    line-height: 6vw;
-  }
   .page__content-title-text {
-    font-size: 5vw;
-    line-height: 10vw;
     margin-bottom: 0;
   }
   .page__content-subtitle-text {
-    font-size: 4vw;
-    line-height: 4vw;
     margin-bottom: 2%;
-  }
-  .page__content-text {
-    font-size: 3vw;
-    line-height: 6vw;
   }
 }
 @media (max-width: 480px) {
-  .header__logo-text, .header__logo-link {
-    font-size: 5vw;
-  }
   .header .burger {
     width: 9vw;
     height: 4vw;
