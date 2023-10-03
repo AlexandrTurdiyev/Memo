@@ -5,7 +5,7 @@
 
 body {
   font-size: clamp(12px, 3vw, 32px);
-  line-height: clamp(16px, 5vw, 48px);
+  line-height: clamp(16px, 3.5vw, 48px);
 }
 
 a {
