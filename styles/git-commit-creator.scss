@@ -1,0 +1,12 @@
+.create-commit {
+  &__form {}
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  &__checkbox-input {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+  }
+}
