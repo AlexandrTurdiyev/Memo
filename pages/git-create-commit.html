@@ -66,14 +66,19 @@
                                 <option class="create-commit__select-option" value="rebuild:">rebuild:</option>
                             </select>
                         </label>
+                        <p></p>
                         <label>
-                            <input class="create-commit__text-input" type="text" placeholder="commit description" required="required">
+                            <textarea class="create-commit__text-input" type="text" rows="4" placeholder="commit description" required="required"></textarea>
                         </label>
+                        <p></p>
                         <label>
                             <input class="create-commit__time-input" type="text" placeholder="timecode" required="required">
                         </label>
-                        <button class="create-commit__form-btn create-commit__refresh-time-btn">refresh time</button>
-                        <button class="create-commit__form-btn create-commit__submit-btn" type="submit" value="submit">create commit</button>
+                        <p></p>
+                        <div class="create-commit__buttons-wrapper">
+                            <button class="create-commit__form-btn create-commit__refresh-time-btn">refresh time</button>
+                            <button class="create-commit__form-btn create-commit__submit-btn" type="submit" value="submit">create commit</button>
+                        </div>
                     </form>
                     <div class="create-commit__output">
                         <p class="create-commit__output-text">create commit result</p>

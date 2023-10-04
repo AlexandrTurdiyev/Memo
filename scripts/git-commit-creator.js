@@ -25,9 +25,15 @@ refreshTimeBtn.addEventListener('click', (e) => {
 createCommitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let gitCommitMinusMValue = gitCommitMinusMCheckBox.checked ? "git commit -m " : "";
-    commitOutput.innerText = gitCommitMinusMValue + `'` + importValueFromInputForm(gitCommitOptionSelector) + ' '
-        + importValueFromInputForm(gitCommitTextInput) + '; timecode: ' +
-        importValueFromInputForm(timeInput) + `'`;
+    commitOutput.innerText = gitCommitMinusMValue
+        + `'`
+        + importValueFromInputForm(gitCommitOptionSelector)
+        + ' '
+        + importValueFromInputForm(gitCommitTextInput)
+        + '; timecode: '
+        +
+        importValueFromInputForm(timeInput)
+        + `'`;
 })
 /* listeners [end] */
 
