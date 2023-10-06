@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9685dc-51ba-48a9-bc0c-e653651d5365" name="Changes" comment="" />
+    <list default="true" id="db9685dc-51ba-48a9-bc0c-e653651d5365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +39,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "memo-bootstrap-v1",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/alexandr_turdiyev/Projects/WEB-Projects/Memo/pages",
     "node.js.detected.package.eslint": "true",
@@ -87,6 +89,7 @@
       <workItem from="1696529623968" duration="614000" />
       <workItem from="1696530265096" duration="62000" />
       <workItem from="1696626239146" duration="185000" />
+      <workItem from="1696626439894" duration="722000" />
     </task>
     <servers />
   </component>
