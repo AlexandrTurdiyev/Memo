@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db9685dc-51ba-48a9-bc0c-e653651d5365" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2VUrk7Z6gqmWJf1Wy0CAEPmi1jl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/alexandr_turdiyev/Projects/WEB-Projects/Memo/pages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\pages" />
+      <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db9685dc-51ba-48a9-bc0c-e653651d5365" name="Changes" comment="" />
+      <created>1694901640644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694901640644</updated>
+      <workItem from="1694901641876" duration="5003000" />
+      <workItem from="1694930854845" duration="1447000" />
+      <workItem from="1694964919564" duration="11492000" />
+      <workItem from="1694983088437" duration="8996000" />
+      <workItem from="1695109950184" duration="4653000" />
+      <workItem from="1695116349680" duration="9283000" />
+      <workItem from="1695127049585" duration="1684000" />
+      <workItem from="1695143119272" duration="6000" />
+      <workItem from="1695143706233" duration="636000" />
+      <workItem from="1695225377879" duration="1425000" />
+      <workItem from="1695404836270" duration="9375000" />
+      <workItem from="1695423617757" duration="2451000" />
+      <workItem from="1696000252229" duration="4166000" />
+      <workItem from="1696365575794" duration="9275000" />
+      <workItem from="1696420377684" duration="368000" />
+      <workItem from="1696420758447" duration="8624000" />
+      <workItem from="1696440739181" duration="2322000" />
+      <workItem from="1696529623968" duration="614000" />
+      <workItem from="1696530265096" duration="62000" />
+      <workItem from="1696626239146" duration="185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
