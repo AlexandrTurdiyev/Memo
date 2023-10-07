@@ -1,0 +1,348 @@
+$fontInter: 'Inter', sans-serif;
+$fontSizeContentText: clamp(12px, 3vw, 32px);
+$lineHeightContentText: clamp(16px, 3.5vw, 48px);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $fontSizeContentText;
+  line-height: $lineHeightContentText;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  top: 0;
+  display: flex;
+  height: 10vh;
+  max-height: 90px;
+  /* BURGER */
+  .burger {
+    z-index: 2;
+    position: relative;
+    width: 45px;
+    height: 20px;
+    display: none;
+    border: none;
+    padding: 0;
+    margin-right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .burger__line {
+    background-color: #8F816C;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  .burger::before,
+  .burger::after {
+    background-color: #8F816C;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: transform 0.1s ease-in-out, top 0.1s ease-in-out, bottom 0.1s ease-in-out;
+
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger--active .burger__line {
+    opacity: 0;
+  }
+
+  .burger--active::before {
+    top: 50%;
+    transform: rotate(45deg);
+
+  }
+
+  .burger--active::after {
+    bottom: auto;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  /* BURGER [END] */
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+  }
+  &__logo-text,
+  &__logo-link {
+    font-family: $fontInter;
+  }
+}
+
+.page {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  &__sidebar-wrapper {
+    position: sticky;
+    top: 7%;
+    width: 20%;
+    height: 100%;
+  }
+
+  .sidebar {
+    padding: 0 4%;
+    &__inner {
+      max-height: 50vh;
+      margin: 4% 0;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+    &__menu {}
+    &__item {
+      margin: 10px 0;
+    }
+    &__link {}
+  }
+
+  &__content-wrapper {
+    display: flex;
+    width: 80%;
+    //padding: 50px;
+  }
+
+  &__content-inner {
+    margin: 3%;
+    font-size: $fontSizeContentText;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+
+  &__content-title-text {
+    font-family: $fontInter;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__content-subtitle-text {
+    font-family: $fontInter;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+  }
+
+  &__content-sub-subtitle-text {
+    font-family: $fontInter;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  &__content-text {
+    font-family: $fontInter;
+    font-weight: 400;
+  }
+
+  &__content-link {
+    color: #000877;
+  }
+
+  &__content-img {
+    width: 100%;
+  }
+
+  &__radio-controls {
+    max-width: 100%;
+  }
+
+  &__radio-controls-inner {
+    display: grid;
+    justify-content: space-around;
+    justify-items: stretch;
+    grid-template-columns: repeat(5, 20%);
+    max-width: 70%;
+  }
+
+  &__radio-controls-item {
+
+  }
+
+  &__radio-controls-label {
+    background: linear-gradient(342deg, rgba(2,38,82,1) 0%, rgba(71,139,255,1) 100%);
+    color: #fff;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease;
+    transform: scale(0.6);
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 27px 22px, rgba(0, 0, 0, 0.12) 0px -6px 15px, rgba(0, 0, 0, 0.12) 0px 2px 3px, rgba(0, 0, 0, 0.17) 0px 6px 7px, rgba(0, 0, 0, 0.09) 0px -2px 3px;
+      border-color: #FFF;
+      transform: scale(0.8);
+      transition: all .4s ease;
+    }
+  }
+  &__radio-controls-input {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+  }
+}
+
+$scaleActiveRadioButton: 1;
+
+.page__radio-controls-inner:has(input[id="layer-default"]:checked) .default {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale($scaleActiveRadioButton);
+  color: yellow;
+}
+
+.page__radio-controls-inner:has(input[id="layer-normal"]:checked) .normal {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale($scaleActiveRadioButton);
+  color: yellow;
+}
+
+.page__radio-controls-inner:has(input[id="layer-1"]:checked) .fn {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale($scaleActiveRadioButton);
+  color: yellow;
+}
+
+.page__radio-controls-inner:has(input[id="layer-2"]:checked) .fn2 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale($scaleActiveRadioButton);
+  color: yellow;
+}
+
+.page__radio-controls-inner:has(input[id="layer-3"]:checked) .fn3 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale($scaleActiveRadioButton);
+  color: yellow;
+}
+
+.page-list {
+  &__item {
+    margin-left: 3rem;
+  }
+}
+
+.download-img {
+  width: clamp(12px, 32px, 36px);
+  height: clamp(12px, 32px, 36px);
+}
+
+
+/* ADAPTIVE */
+@media (max-width: 768px) {
+  .header {
+    height: 11vw;
+    justify-content: space-between;
+    align-items: center;
+    &__logo-text,
+    &__logo-link {
+    }
+    .burger {
+      display: block;
+      margin-left: 3%;
+    }
+  }
+  .page {
+    &__sidebar-wrapper {
+      width: 40%;
+      position: fixed;
+      transform: translateX(-100%);
+      transition: transform 0.4s ease-in-out;
+    }
+    .sidebar {
+      &__link {}
+    }
+    &__content-wrapper {
+      width: 100%;
+    }
+    &__content-inner {}
+    &__content-title-text {
+      margin-bottom: 0;
+    }
+    &__content-subtitle-text {
+      margin-bottom: 2%;
+    }
+    &__content-text { }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__logo-text,
+    &__logo-link {
+    }
+    .burger {
+      width: 9vw;
+      height: 4vw;
+    }
+  }
+  .page-list {
+    &__item {
+      margin-left: 2rem;
+    }
+  }
+}
+/* ADAPTIVE [END] */
+
+/* FUNCTIONS */
+.stop-scroll {
+  overflow: hidden;
+}
+.overlay {
+  z-index: -1;
+  opacity: 1;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.overlay--active {
+  z-index: 1;
+}
+.element--visible {
+  z-index: 10;
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.4s ease-in-out;
+}
+/* FUNCTIONS [END] */

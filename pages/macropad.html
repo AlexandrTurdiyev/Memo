@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Macropad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="/images/favico/macropad-key-q.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="/images/favico/macropad-key-q.ico" rel="icon">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/macropad.css">
+</head>
+<body>
+<div class="overlay"></div>
+<header class="header container">
+    <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+    </button>
+    <div class="header__logo">
+        <div class="header__logo-text"><a class="header__logo-link" href="../index.html">Memo</a></div>
+    </div>
+</header>
+<main>
+    <section class="page container">
+        <div class="page__sidebar-wrapper">
+            <div class="sidebar">
+                <div class="sidebar__inner">
+                    <ul class="sidebar__menu">
+                        <li class="sidebar__item"><a href="macropad.html" class="sidebar__link">Macropad 23 key</a></li>
+                        <li class="sidebar__item"><a href="git-create-commit.html" class="sidebar__link">Git commit creator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page__content-wrapper">
+            <div class="page__content-inner">
+                <h2 class="page__content-title-text">Macropad 23 key</h2>
+                <h3 class="page__content-subtitle-text">Макропад с 23 клавишами</h3>
+                <img src="../images/macropad/delivered_photo-1.jpg" class="page__content-img" alt="macropad-after-delivered-1-img">
+                <img src="../images/macropad/delivered_photo-2.jpg" class="page__content-img" alt="macropad-after-delivered-2-img">
+
+                <p class="page__content-text">
+                    Заказывал
+                    <a href="https://aliexpress.ru/item/1005001730765736.html?spm=a2g2w.orderdetail.0.0.52f94aa6bScNnw&sku_id=12000017376899241" class="page__content-link">здесь</a>
+                    <br>При заказе указывал следующие параметры:</p>
+                <ul class="page-list">
+                    <li class="page-list__item">Color: Gateron Switch</li>
+                    <li class="page-list__item">Axis Body: Brown Switch</li>
+                </ul>
+                <h3 class="page__content-subtitle-text">Функции</h3>
+                <ul class="page-list">
+                    <li class="page-list__item">Назначение клавиш обычной клавиатуры, клавишам макропада</li>
+                    <li class="page-list__item">Назначение сочетаний клавиш клавитуры, клавишам макропада</li>
+                    <li class="page-list__item">Назначение быстрых макросов (12 шт.)</li>
+                    <li class="page-list__item">Назначение макросов (12 шт.)</li>
+                    <li class="page-list__item">Использование 4 слоёв с настройкой каждого слоя отдельно</li>
+                    <li class="page-list__item">Настраиваемая RGB подсветка</li>
+                </ul>
+                <h3 class="page__content-subtitle-text">Комлектация</h3>
+                <ul class="page-list">
+                    <li class="page-list__item">Макропад</li>
+                    <li class="page-list__item">Кабель USB на USB-C</li>
+                    <li class="page-list__item">Кейкапер</li>
+                </ul>
+                <h3 class="page__content-subtitle-text">Программное обеспечение</h3>
+                <p class="page__content-text">
+                    Продавец данного девайса, предоставил мне программное обеспечение,
+                    которое называется <b>AMAG</b> (так называется иcполнительный файл ПО) или <b>AMAKeyboardClient</b>
+                    (данное название можно увидеть в заголовке, после запуска ПО).
+                </p>
+                <a class="page__content-link" href="../files/AMAG-Software-for-Macropad.rar">Скачать ПО</a>
+                <a class="page__content-link" href="../files/AMAG-Software-for-Macropad.rar">
+                    <img class="page__content-img download-img" src="../images/download.svg" alt="download-link-img" >
+                </a>
+                <h3 class="page__content-subtitle-text">Интерфейс AMAG</h3>
+                <p class="page__content-text">
+                    После запуска ПО, откроется как правило окно первой влкадки.
+                    ПО имеет 4 основные вкладки:
+                </p>
+                <ul class="page-list">
+                    <li class="page-list__item">Keymapper</li>
+                    <li class="page-list__item">Custom Macro</li>
+                    <li class="page-list__item">Quick Macro</li>
+                    <li class="page-list__item">Options</li>
+                </ul>
+                <p>&nbsp;</p>
+
+            <!-- controls macropad layers -->
+                <div class="page__radio-controls">
+                    <div class="page__radio-controls-inner">
+                        <div class="page__radio-controls-item">
+                            <label class="page__radio-controls-label default">Default
+                                <input type="radio" class="page__radio-controls-input" id="layer-default" name="macro-layers" value="layer-default" checked>
+                            </label>
+                        </div>
+                        <div class="page__radio-controls-item">
+                            <label class="page__radio-controls-label normal">Normal
+                                <input type="radio" class="page__radio-controls-input" id="layer-normal" name="macro-layers" value="layer-normal">
+                            </label>
+                        </div>
+                        <div class="page__radio-controls-item">
+                            <label class="page__radio-controls-label fn">FN
+                                <input type="radio" class="page__radio-controls-input" id="layer-1" name="macro-layers" value="layer-1">
+                            </label>
+                        </div>
+                        <div class="page__radio-controls-item">
+                            <label class="page__radio-controls-label fn2">FN2
+                                <input type="radio" class="page__radio-controls-input" id="layer-2" name="macro-layers" value="layer-2">
+                            </label>
+                        </div>
+                        <div class="page__radio-controls-item">
+                            <label class="page__radio-controls-label fn3">FN3
+                                <input type="radio" class="page__radio-controls-input" id="layer-3" name="macro-layers" value="layer-3">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            <!--x controls macropad layers [end] -->
+
+                <h3 class="page__content-subtitle-text">Функции клавиатуры</h3>
+                <h4 class="page__content-sub-subtitle-text">Слой Normal</h4>
+            <!-- default layer MACROPAD -->
+                <div class="macropad-wrapper">
+                    <div class="macropad default-layer">
+                        <div class="macropad__key macropad__key-1"><div>Esc</div></div>
+                        <div class="macropad__key macropad__key-2"><div title="1!">1!</div></div>
+                        <div class="macropad__key macropad__key-3"><div>2@</div></div>
+                        <div class="macropad__key macropad__key-4"><div>3#</div></div>
+                        <div class="macropad__key macropad__key-5"><div>4$</div></div>
+                        <div class="macropad__key macropad__key-6"><div>5%</div></div>
+
+                        <div class="macropad__key macropad__key-7"><div>T</div></div>
+                        <div class="macropad__key macropad__key-8"><div>Q</div></div>
+                        <div class="macropad__key macropad__key-9"><div>W</div></div>
+                        <div class="macropad__key macropad__key-10"><div>E</div></div>
+                        <div class="macropad__key macropad__key-11"><div>R</div></div>
+                        <div class="macropad__key macropad__key-12"><div>Y</div></div>
+
+                        <div class="macropad__key macropad__key-13"><div>V</div></div>
+                        <div class="macropad__key macropad__key-14"><div>A</div></div>
+                        <div class="macropad__key macropad__key-15"><div>S</div></div>
+                        <div class="macropad__key macropad__key-16"><div>D</div></div>
+                        <div class="macropad__key macropad__key-17"><div>F</div></div>
+                        <div class="macropad__key macropad__key-18"><div>G</div></div>
+
+                        <div class="macropad__key macropad__key-19"><div>Z</div></div>
+                        <div class="macropad__key macropad__key-20"><div>X</div></div>
+                        <div class="macropad__key macropad__key-21"><div>C</div></div>
+                        <div class="macropad__key macropad__key-22"><div>B</div></div>
+                        <div class="macropad__key macropad__key-23"><div>0 Ins</div></div>
+                    </div>
+                </div>
+            <!--x default layer MACROPAD [end] -->
+
+            <!-- normal layer MACROPAD -->
+                <div class="macropad-wrapper">
+                    <div class="macropad normal-layer">
+                        <div class="macropad__key macropad__normal-key-1"><div>Esc</div></div>
+                        <div class="macropad__key macropad__normal-key-2"><div title="1!">F5</div></div>
+                        <div class="macropad__key macropad__normal-key-3"><div>qck Mac10</div></div>
+                        <div class="macropad__key macropad__normal-key-4"><div></div></div>
+                        <div class="macropad__key macropad__normal-key-5"><div>toggle FN2</div></div>
+                        <div class="macropad__key macropad__normal-key-6"><div>toggle FN2</div></div>
+
+                        <div class="macropad__key macropad__normal-key-7"><div>qck Mac1</div></div>
+                        <div class="macropad__key macropad__normal-key-8"><div>qck Mac2</div></div>
+                        <div class="macropad__key macropad__normal-key-9"><div>qck Mac3</div></div>
+                        <div class="macropad__key macropad__normal-key-10"><div></div></div>
+                        <div class="macropad__key macropad__normal-key-11"><div></div></div>
+                        <div class="macropad__key macropad__normal-key-12"><div>Del</div></div>
+
+                        <div class="macropad__key macropad__normal-key-13"><div>qck Mac5</div></div>
+                        <div class="macropad__key macropad__normal-key-14"><div>qck Mac7</div></div>
+                        <div class="macropad__key macropad__normal-key-15"><div>qck Mac6</div></div>
+                        <div class="macropad__key macropad__normal-key-16"><div></div></div>
+                        <div class="macropad__key macropad__normal-key-17"><div>Space</div></div>
+                        <div class="macropad__key macropad__normal-key-18"><div>BackSpc</div></div>
+
+                        <div class="macropad__key macropad__normal-key-19"><div>qck Mac4</div></div>
+                        <div class="macropad__key macropad__normal-key-20"><div>CST Mac12</div></div>
+                        <div class="macropad__key macropad__normal-key-21"><div>FN</div></div>
+                        <div class="macropad__key macropad__normal-key-22"><div></div></div>
+                        <div class="macropad__key macropad__key--23 macropad__key-23"><div>Enter</div></div>
+                    </div>
+                </div>
+            <!--x normal layer MACROPAD [end] -->
+
+            <!-- fn layer MACROPAD -->
+                <div class="macropad-wrapper">
+                    <div class="macropad fn-layer">
+                        <div class="macropad__key macropad__fn-key-1"><div>Esc</div></div>
+                        <div class="macropad__key macropad__fn-key-2"><div title="1!">F5</div></div>
+                        <div class="macropad__key macropad__fn-key-3"><div>qck Mac10</div></div>
+                        <div class="macropad__key macropad__fn-key-4"><div></div></div>
+                        <div class="macropad__key macropad__fn-key-5"><div>toggle FN2</div></div>
+                        <div class="macropad__key macropad__fn-key-6"><div>toggle FN2</div></div>
+
+                        <div class="macropad__key macropad__fn-key-7"><div>qck Mac1</div></div>
+                        <div class="macropad__key macropad__fn-key-8"><div>qck Mac2</div></div>
+                        <div class="macropad__key macropad__fn-key-9"><div>qck Mac3</div></div>
+                        <div class="macropad__key macropad__fn-key-10"><div></div></div>
+                        <div class="macropad__key macropad__fn-key-11"><div></div></div>
+                        <div class="macropad__key macropad__fn-key-12"><div>Del</div></div>
+
+                        <div class="macropad__key macropad__fn-key-13"><div>qck Mac5</div></div>
+                        <div class="macropad__key macropad__fn-key-14"><div>qck Mac7</div></div>
+                        <div class="macropad__key macropad__fn-key-15"><div>qck Mac6</div></div>
+                        <div class="macropad__key macropad__fn-key-16"><div></div></div>
+                        <div class="macropad__key macropad__fn-key-17"><div>Space</div></div>
+                        <div class="macropad__key macropad__fn-key-18"><div>BackSpc</div></div>
+
+                        <div class="macropad__key macropad__fn-key-19"><div>qck Mac4</div></div>
+                        <div class="macropad__key macropad__fn-key-20"><div>CST Mac12</div></div>
+                        <div class="macropad__key macropad__fn-key-21"><div>FN</div></div>
+                        <div class="macropad__key macropad__fn-key-22"><div></div></div>
+                        <div class="macropad__key macropad__fn-key--23 macropad__key-23"><div>Enter</div></div>
+                    </div>
+                </div>
+            <!--x fn layer MACROPAD [end] -->
+
+            <!-- fn2 layer MACROPAD -->
+                <div class="macropad-wrapper">
+                    <div class="macropad fn2-layer">
+                        <div class="macropad__key macropad__fn2-key-1"><div>Esc</div></div>
+                        <div class="macropad__key macropad__fn2-key-2"><div title="1!">F5</div></div>
+                        <div class="macropad__key macropad__fn2-key-3"><div>qck Mac10</div></div>
+                        <div class="macropad__key macropad__fn2-key-4"><div></div></div>
+                        <div class="macropad__key macropad__fn2-key-5"><div>toggle FN2</div></div>
+                        <div class="macropad__key macropad__fn2-key-6"><div>toggle FN2</div></div>
+
+                        <div class="macropad__key macropad__fn2-key-7"><div>qck Mac1</div></div>
+                        <div class="macropad__key macropad__fn2-key-8"><div>qck Mac2</div></div>
+                        <div class="macropad__key macropad__fn2-key-9"><div>qck Mac3</div></div>
+                        <div class="macropad__key macropad__fn2-key-10"><div></div></div>
+                        <div class="macropad__key macropad__fn2-key-11"><div></div></div>
+                        <div class="macropad__key macropad__fn2-key-12"><div>Del</div></div>
+
+                        <div class="macropad__key macropad__fn2-key-13"><div>qck Mac5</div></div>
+                        <div class="macropad__key macropad__fn2-key-14"><div>qck Mac7</div></div>
+                        <div class="macropad__key macropad__fn2-key-15"><div>qck Mac6</div></div>
+                        <div class="macropad__key macropad__fn2-key-16"><div></div></div>
+                        <div class="macropad__key macropad__fn2-key-17"><div>Space</div></div>
+                        <div class="macropad__key macropad__fn2-key-18"><div>BackSpc</div></div>
+
+                        <div class="macropad__key macropad__fn2-key-19"><div>qck Mac4</div></div>
+                        <div class="macropad__key macropad__fn2-key-20"><div>CST Mac12</div></div>
+                        <div class="macropad__key macropad__fn2-key-21"><div>FN</div></div>
+                        <div class="macropad__key macropad__fn2-key-22"><div></div></div>
+                        <div class="macropad__key macropad__fn2-key-23 macropad__key-23"><div>Enter</div></div>
+                    </div>
+                </div>
+            <!--x fn2 layer MACROPAD [end] -->
+
+            <!-- fn3 layer MACROPAD -->
+                <div class="macropad-wrapper">
+                    <div class="macropad fn3-layer">
+                        <div class="macropad__key macropad__fn3-key-1"><div>Esc</div></div>
+                        <div class="macropad__key macropad__fn3-key-2"><div title="1!">F5</div></div>
+                        <div class="macropad__key macropad__fn3-key-3"><div>qck Mac10</div></div>
+                        <div class="macropad__key macropad__fn3-key-4"><div></div></div>
+                        <div class="macropad__key macropad__fn3-key-5"><div>toggle FN2</div></div>
+                        <div class="macropad__key macropad__fn3-key-6"><div>toggle FN2</div></div>
+
+                        <div class="macropad__key macropad__fn3-key-7"><div>qck Mac1</div></div>
+                        <div class="macropad__key macropad__fn3-key-8"><div>qck Mac2</div></div>
+                        <div class="macropad__key macropad__fn3-key-9"><div>qck Mac3</div></div>
+                        <div class="macropad__key macropad__fn3-key-10"><div></div></div>
+                        <div class="macropad__key macropad__fn3-key-11"><div></div></div>
+                        <div class="macropad__key macropad__fn3-key-12"><div>Del</div></div>
+
+                        <div class="macropad__key macropad__fn3-key-13"><div>qck Mac5</div></div>
+                        <div class="macropad__key macropad__fn3-key-14"><div>qck Mac7</div></div>
+                        <div class="macropad__key macropad__fn3-key-15"><div>qck Mac6</div></div>
+                        <div class="macropad__key macropad__fn3-key-16"><div></div></div>
+                        <div class="macropad__key macropad__fn3-key-17"><div>Space</div></div>
+                        <div class="macropad__key macropad__fn3-key-18"><div>BackSpc</div></div>
+
+                        <div class="macropad__key macropad__fn3-key-19"><div>qck Mac4</div></div>
+                        <div class="macropad__key macropad__fn3-key-20"><div>CST Mac12</div></div>
+                        <div class="macropad__key macropad__fn3-key-21"><div>FN</div></div>
+                        <div class="macropad__key macropad__fn3-key-22"><div></div></div>
+                        <div class="macropad__key macropad__fn3-key-23 macropad__key-23"><div>Enter</div></div>
+                    </div>
+                </div>
+            <!--x fn3 layer MACROPAD [end] -->
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../scripts/burger.js"></script>
+<script src="../scripts/index.js"></script>
+<script src="../scripts/macropad.js"></script>
+</body>
+</html>
