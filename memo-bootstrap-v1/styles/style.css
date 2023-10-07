@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.content {
+  margin-top: 1rem;
+}
+
+.footer {
+  max-height: 56px;
+  background-color: #F8F9FA;
+}
+.footer__inner {
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.footer__year-text {
+  margin: 0;
+}
+.footer__img {
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
