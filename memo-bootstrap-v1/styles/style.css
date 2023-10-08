@@ -35,4 +35,10 @@
   height: 32px;
 }
 
+@media (max-width: 576px) {
+  .footer__img {
+    margin: 0 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

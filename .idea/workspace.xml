@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9685dc-51ba-48a9-bc0c-e653651d5365" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/images/footer/e-mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/images/footer/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/images/logo/book-bookmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/scripts/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/pages/git/commit-creator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/pages/git/git.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/scripts/commit-creator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/commit-creator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/commit-creator.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/commit-creator.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memo-bootstrap-v1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/memo-bootstrap-v1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/memo-bootstrap-v1/styles/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "memo-bootstrap-v1",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/alexandr_turdiyev/Projects/WEB-Projects/Memo/memo-bootstrap-v1/pages",
+    "last_opened_file_path": "D:/alexandr_turdiyev/Projects/WEB-Projects/Memo/memo-bootstrap-v1/pages/git",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,10 +63,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\memo-bootstrap-v1\pages\git" />
       <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\memo-bootstrap-v1\pages" />
       <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\memo-bootstrap-v1\pages\git" />
       <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo\pages" />
       <recent name="D:\alexandr_turdiyev\Projects\WEB-Projects\Memo" />
     </key>
@@ -98,7 +102,7 @@
       <workItem from="1696530265096" duration="62000" />
       <workItem from="1696626239146" duration="185000" />
       <workItem from="1696626439894" duration="4541000" />
-      <workItem from="1696707112248" duration="9227000" />
+      <workItem from="1696707112248" duration="18753000" />
     </task>
     <servers />
   </component>
